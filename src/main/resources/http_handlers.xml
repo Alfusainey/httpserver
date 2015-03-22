@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<supportedmethods>
+		<supportedmethod>
+		  <class name="com.adobe.assignment.http.methods.GetMethodHandler" />
+		</supportedmethod>
+		<supportedmethod>
+		  <class name="com.adobe.assignment.http.methods.DeleteMethod" />
+		</supportedmethod>		
+	</supportedmethods>
+</config>
