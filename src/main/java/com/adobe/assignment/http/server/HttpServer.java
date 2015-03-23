@@ -131,12 +131,7 @@ public class HttpServer {
 
 			while (true) {
 				try {
-
 					socket = serverSocket.accept();
-
-					log.info("Accepted a connection from " + socket.getInetAddress().getHostAddress()
-							+ ":" + socket.getPort());
-
 					connection = new HttpConnectionHandler(socket, config);
 
 					// Add the connection to a BlockingQueue<Runnable> object
@@ -144,7 +139,7 @@ public class HttpServer {
 					// in the pool
 					threadPool.submit(connection);
 				} catch (SocketTimeoutException ste) {
-					log.info("The server has timeout waiting for incomming connection from clients");
+					// do nothing
 				} catch (IOException e) {
 					log.warn("Fatal error: "+e.getMessage());
 				}
@@ -158,8 +153,6 @@ public class HttpServer {
 	 * Initializes the HTTP server. The initialization includes reading the
 	 * configuration needed to bootstrap the HTTP Server. This includes the
 	 * properties and XML file configurations.
-	 * 
-	 * @throws IOException
 	 */
 	private void init() {
 		// Load both configuration as a resource.

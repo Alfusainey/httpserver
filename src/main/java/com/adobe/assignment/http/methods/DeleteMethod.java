@@ -14,7 +14,7 @@ import com.adobe.assignment.http.server.ServerConfig;
  *  header field is set. Otherwise deleting the resource will fail.
  *  
  */
-class DeleteMethod implements HttpMethodHandler {
+public class DeleteMethod implements HttpMethodHandler {
 
 	private ServerConfig config;
 	

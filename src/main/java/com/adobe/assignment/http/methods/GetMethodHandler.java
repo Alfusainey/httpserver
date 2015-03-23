@@ -18,7 +18,7 @@ import com.adobe.assignment.http.server.ServerConfig;
  *  the file system and sends it back to the client.
  *  
  */
-class GetMethodHandler implements HttpMethodHandler {
+public class GetMethodHandler implements HttpMethodHandler {
 
 	private ServerConfig config;
 	
