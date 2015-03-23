@@ -26,7 +26,7 @@ public class ServerConfigTest extends TestCase {
     		"<config>\n" +            
             "    <supportedmethods>\n"+
             "        <supportedmethod>\n" +
-            "            <class name=\"com.adobe.assignment.http.methods.GetHandler\" />\n" +
+            "            <class name=\"com.adobe.assignment.http.methods.DeleteMethod\" />\n" +
             "        </supportedmethods>\n" +
             "    </supportedmethods>" +
             "";
