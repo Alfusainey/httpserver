@@ -10,7 +10,9 @@ import org.apache.commons.io.FilenameUtils;
  * for more than one MIMETyper. The MIMETyper class is thread-safe,
  * 
  * @author Prof. David Bernstein, James Madison University
- * @version 1.0
+ * @author Alfusainey Jallow, University of the Gambia
+ * 
+ * @version 1.1
  */
 public class MIMETyper {
 	
