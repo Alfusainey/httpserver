@@ -112,10 +112,10 @@ public class ServerConfig {
 			}
 		} catch (ParserConfigurationException e) {
 			log.error("A serious configuration error occured during XML config parsing");
+			throw new SAXException(e.getMessage());
 		} catch (IOException e) {
 			log.error("Exception " + e.getMessage());
-		} catch (SAXException e) {
-			log.error("Exception " + e.getMessage());
+			throw new SAXException(e.getMessage());
 		}
 	}
 

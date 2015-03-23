@@ -17,7 +17,7 @@ public class ServerConfigTest extends TestCase {
     		"<config>\n" +            
             "    <supportedmethods>\n"+
             "        <supportedmethod>\n" +
-            "            <class name=\"cs.jmu.edu.http.methods.GetHandler\" />\n" +
+            "            <class name=\"com.adobe.assignment.http.methods.GetMethodHandler\" />\n" +
             "        </supportedmethod>\n" +
             "    </supportedmethods>" +
             "</config>";
@@ -26,7 +26,7 @@ public class ServerConfigTest extends TestCase {
     		"<config>\n" +            
             "    <supportedmethods>\n"+
             "        <supportedmethod>\n" +
-            "            <class name=\"cs.jmu.edu.http.methods.GetHandler\" />\n" +
+            "            <class name=\"com.adobe.assignment.http.methods.GetHandler\" />\n" +
             "        </supportedmethods>\n" +
             "    </supportedmethods>" +
             "";
@@ -47,7 +47,7 @@ public class ServerConfigTest extends TestCase {
 
     	assertNotNull(handlers);    	 
     	assertEquals(1, handlers.size());
-    	assertEquals("cs.jmu.edu.http.methods.GetHandler", handlers.get(0).getClass().getName());      	    	
+    	assertEquals("com.adobe.assignment.http.methods.GetMethodHandler", handlers.get(0).getClass().getName());      	    	
     }
     
     @Test
