@@ -10,7 +10,9 @@ import java.util.concurrent.ConcurrentHashMap;
  * A mapping of name=value pairs.
  *
  * @author  Prof. David Bernstein, James Madison University
- * @version 1.0
+ * @author Alfusainey Jallow, University of the Gambia
+ * 
+ * @version 1.1
  */
 public class NameValueMapper {
 
